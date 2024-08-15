@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Selector</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="page-selector">
+        <div class="page-options">
+            <label>
+                <input type="checkbox" id="all-pages" onclick="toggleAllPages(this)" />
+                <span class="custom-checkbox"></span>
+                All pages
+            </label>
+            <hr />
+            <label>
+                <input type="checkbox" class="page" value="Page 1" onclick="togglePage()" />
+                <span class="custom-checkbox"></span>
+                Page 1
+            </label>
+            <label>
+                <input type="checkbox" class="page" value="Page 2" onclick="togglePage()" />
+                <span class="custom-checkbox"></span>
+                Page 2
+            </label>
+            <label>
+                <input type="checkbox" class="page" value="Page 3" onclick="togglePage()" />
+                <span class="custom-checkbox"></span>
+                Page 3
+            </label>
+            <label>
+                <input type="checkbox" class="page" value="Page 4" onclick="togglePage()" />
+                <span class="custom-checkbox"></span>
+                Page 4
+            </label>
+        </div>
+        <hr />
+        <button id="done-btn" onclick="doneSelection()">Done</button>
+    </div>
+
+    <script src="brain.js"></script>
+</body>
+
+</html>
