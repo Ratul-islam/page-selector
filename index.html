@@ -11,32 +11,49 @@
 <body>
     <div class="page-selector">
         <div class="page-options">
-            <label>
-                <input type="checkbox" id="all-pages" onclick="toggleAllPages(this)" />
-                <span class="custom-checkbox"></span>
-                All pages
-            </label>
+            <div class="checkbox-wrapper">
+                <input class="checkbox-input" id="all-pages" type="checkbox" onclick="toggleAllPages(this)"/>
+                <label class="input-label" for="all-pages"><span>
+                  <svg width="18px" height="14px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span><span>All pages</span>
+                </label>
+              </div>
             <hr />
-            <label>
-                <input type="checkbox" class="page" value="Page 1" onclick="togglePage()" />
-                <span class="custom-checkbox"></span>
-                Page 1
-            </label>
-            <label>
-                <input type="checkbox" class="page" value="Page 2" onclick="togglePage()" />
-                <span class="custom-checkbox"></span>
-                Page 2
-            </label>
-            <label>
-                <input type="checkbox" class="page" value="Page 3" onclick="togglePage()" />
-                <span class="custom-checkbox"></span>
-                Page 3
-            </label>
-            <label>
-                <input type="checkbox" class="page" value="Page 4" onclick="togglePage()" />
-                <span class="custom-checkbox"></span>
-                Page 4
-            </label>
+            <div class="checkbox-wrapper">
+                <input class="checkbox-input page" value="page 1" id="page1" type="checkbox" onclick="togglePage()"/>
+                <label class="input-label" for="page1"><span>
+                  <svg width="18px" height="14px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span><span>
+                    Page 1</span>
+                </label>
+              </div>
+              <div class="checkbox-wrapper">
+                <input class="checkbox-input page" id="page2" value="page 2" type="checkbox" onclick="togglePage()"/>
+                <label class="input-label" for="page2"><span>
+                  <svg width="18px" height="14px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span><span>
+                    Page 2</span>
+                </label>
+              </div><div class="checkbox-wrapper">
+                <input class="checkbox-input page" id="page3"  value="page 3" type="checkbox" onclick="togglePage()"/>
+                <label class="input-label" for="page3"><span>
+                  <svg width="18px" height="14px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span><span>
+                    Page 3</span>
+                </label>
+              </div><div class="checkbox-wrapper">
+                <input class="checkbox-input page" id="page4"  value="page 4" type="checkbox" onclick="togglePage()"/>
+                <label class="input-label" for="page4"><span>
+                  <svg width="18px" height="14px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span><span>
+                    Page 4</span>
+                </label>
+              </div>
         </div>
         <hr />
         <button id="done-btn" onclick="doneSelection()">Done</button>
